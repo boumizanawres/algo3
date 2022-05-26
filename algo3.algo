@@ -1,0 +1,21 @@
+PROCEDURE dot_product (V1, V2 : ARRAY_OF FLOAT)
+    VAR 
+  ps: FLOAT;
+  BEGIN
+  FOR i FROM 1 to V1.lenght STEP 1 DO
+ps:= V1[i]*V2[i];
+  END_FOR  
+  END
+ALGORITHM Dotproduct 
+VAR
+i,j:INTEGER 
+vectors  : ARRAY_OF VECTORS;
+BEGIN
+FOR i FROM 1 TO i<vectors.length STEP 1 DO
+FOR j FROMj=i+1 TO j<vectors.length STEP 1 DO
+
+ IF (dot_product(vectors[i], vectors[j])=0) THEN write ("vectors[i]"" AND" "vectors[j]""ARE ORGONAL")
+END_FOR
+END_FOR
+
+END
